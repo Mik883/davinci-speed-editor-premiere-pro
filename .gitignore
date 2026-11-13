@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+build/
+dist/
+*.spec
+*.pdb
+*.obj
+*.iobj
+*.ipdb
+adobe-sdk-*/
+native-control-surface/Src/
+premiere_mapping.json
+.DS_Store
+Thumbs.db

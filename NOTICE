@@ -1,0 +1,18 @@
+DaVinci Speed Editor for Adobe Premiere Pro
+Copyright 2026 Speed Editor for Premiere contributors
+
+The Apache License 2.0 applies to the original bridge, UXP panel, installer,
+documentation, and their compiled forms unless otherwise noted.
+
+The file payload/SpeedEditorPremiere.acsrf is not licensed under Apache-2.0.
+It is a distributable plug-in binary built against the Adobe Premiere Pro SDK
+and remains subject to the applicable Adobe SDK and third-party terms. Adobe SDK
+source and Adobe-confidential sample source are intentionally not included.
+
+DaVinci Resolve, Speed Editor and Blackmagic Design are trademarks of Blackmagic
+Design Pty. Ltd. Adobe and Premiere Pro are trademarks of Adobe. This project is
+independent and is not affiliated with or endorsed by either company.
+
+The Speed Editor challenge-response implementation includes work derived from
+bmd.py by Sylvain Munaut, Copyright 2021, under Apache License 2.0. See
+THIRD_PARTY_NOTICES.md for details.

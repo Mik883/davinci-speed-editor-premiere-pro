@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Speed Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="panel">
+    <div class="eyebrow">DAVINCI SPEED EDITOR</div>
+    <h1>Controlli Premiere Pro</h1>
+    <p class="hint">Configurazione live per USB-C e Bluetooth. Le scorciatoie personalizzate devono coincidere con il preset tastiera di Premiere.</p>
+
+    <nav class="tabs">
+      <button class="tab active" data-tab="jog">Jog</button>
+      <button class="tab" data-tab="keys">Mappatura tasti</button>
+    </nav>
+
+    <section id="tab-jog" class="tab-page active">
+      <div class="control">
+        <div class="value-row">
+          <label for="jogSpeed">Velocità Jog</label>
+          <output id="speedValue">—</output>
+        </div>
+        <input id="jogSpeed" type="range" min="0.05" max="3" step="0.001" value="1">
+        <div class="range-labels"><span>Più lenta</span><span>Più veloce</span></div>
+      </div>
+      <div class="actions">
+        <button id="resetSpeed">Ripristina 1,00×</button>
+        <button id="reloadConfig" class="secondary">Ricarica</button>
+      </div>
+    </section>
+
+    <section id="tab-keys" class="tab-page">
+      <div class="mapping-toolbar">
+        <span>Premi un tasto Speed Editor → scegli comando nativo o scorciatoia.</span>
+        <button id="saveMappings">Salva e applica</button>
+      </div>
+      <div class="mapping-header">
+        <span>Tasto</span><span>Pressione singola</span><span>Doppia pressione</span>
+      </div>
+      <div id="mappingRows" class="mapping-rows"></div>
+    </section>
+
+    <div id="status" class="status">Caricamento configurazione…</div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
